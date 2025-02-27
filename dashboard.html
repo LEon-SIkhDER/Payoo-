@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=`">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="dashboard.css">
     <title>Document</title>
@@ -12,7 +12,7 @@
         <div class="logo flex">
             <img class="w-[50px]" src="img/Group.png" alt="">
             <div class="balance-sec">
-                <div class="balance font-extrabold text-[18px]">$45000</div>
+                <div class="balance font-extrabold text-[18px]">$<span id="balance">45000</span></div>
                 <p class="text-[14px]">  Available Balance</p>
 
             </div>
@@ -20,10 +20,60 @@
         <button class="logout flex"><img class="w-4 h-4 mr-1" src="img/exit.png" alt=""> Log Out</button>
     </header>
 
-    <div class="dashboard-section">
-        <h1>🔥 Welcome to Payooo!</h1>
-        <p>Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
-    </div>
+    <!-- new  -->
+
+    <!-- <section id="balance">1000</section> -->
+    <section class="welcome">
+        <h1 class="text-[24px] ">🔥 Welcome to Payooo!</h1>
+        <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+    </section>
+    <section class="options">
+        <div class="cards grid">
+            <div class="card">
+                <img src="img/wallet1.png" alt="">
+                <p>Add Money</p>
+            </div>
+            <div class="card">
+                <img src="img/send1.png" alt="">
+                <p>Cashout</p>
+            </div>
+            <div class="card">
+                <img src="img/money1.png" alt="">
+                <p>Transfer money</p>
+            </div>
+            <div class="card">
+                <img src="img/bonus1.png" alt="">
+                <p>Get Bonus</p>
+            </div>
+            <div class="card">
+                <img src="img/purse1.png" alt="">
+                <p>Pay Bill</p>
+            </div>
+            <div class="card">
+                <img src="img/transaction1.png" alt="">
+                <p>Transactions</p>
+            </div>
+        </div>
+    </section>
+    <section class="addmoney">
+        <h1>Add Money</h1>
+        <form action="#">
+            <legend>Select A Bank</legend>
+            <select name="" id="">
+                <option value="bkash">bKash</option>
+                <option value="nagad">Nagad</option>
+                <option value="rocket">Rocket</option>
+                <option value="upay">Upay</option>
+            </select>
+            <legend>Back Account Number</legend>
+            <input type="number" placeholder="Enter 11 digit account number">
+            <legend>Amount To Add </legend>
+            <input id="amount" type="number" placeholder="Add amount to withdraw">
+            <legend>Pin Number</legend>
+            <input id="pinnumber" type="number" placeholder="Enter 4 digit pin number">
+            <button id="add-money">Add Money</button>
+        </form>
+    </section>
 
 
 
@@ -31,8 +81,7 @@
 
 
 
+    <script src="dashboard.js"></script>
 
-
-    
 </body>
 </html>
