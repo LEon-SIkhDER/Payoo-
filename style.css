@@ -1,0 +1,58 @@
+/* basic-css */
+body{
+    font-family: "Outfit", serif;
+    background: #F4F5F7;
+}
+/* section-login */
+.login{
+    position: relative;
+    margin-top: 150px;
+}
+.login img{
+    margin: auto;
+}
+.moon-shape{
+    position: absolute;
+    left: calc(50% - 156px);
+    top: -50px;
+    z-index: -999;
+
+}
+.grp-img{
+
+    margin-top: 200px !important;
+    z-index: 999;
+    position: relative;
+    top: -20px;
+}
+.login-form{
+    width: 402px;
+    background: white;
+    padding: 32px;
+    margin: auto;
+    border-radius: 20px;
+}
+input{
+    height: 52px;
+    padding: 0 20px;
+    border-radius: 32px;
+    margin-bottom: 16px;
+    background: #F4F5F7;
+
+}
+.login-form p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+
+}
+.login-form button, .login-form input{
+    width: 100%;
+}
+.login-form button{
+    background: blue;
+    padding: 14px;
+    border-radius: 32px;
+    color: white;
+    font-weight: 500;
+}
