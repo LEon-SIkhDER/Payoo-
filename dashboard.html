@@ -29,11 +29,11 @@
     </section>
     <section class="options">
         <div class="cards grid">
-            <div class="card">
+            <div id="add-money-box" class="card">
                 <img src="img/wallet1.png" alt="">
                 <p>Add Money</p>
             </div>
-            <div class="card">
+            <div id="cash-out-box" class="card">
                 <img src="img/send1.png" alt="">
                 <p>Cashout</p>
             </div>
@@ -55,7 +55,7 @@
             </div>
         </div>
     </section>
-    <section class="addmoney">
+    <section id="addmoney" class="addmoney">
         <h1>Add Money</h1>
         <form action="#">
             <legend>Select A Bank</legend>
@@ -74,8 +74,25 @@
             <button id="add-money">Add Money</button>
         </form>
     </section>
+    <section id="cash-out-section" class="cash-out-section">
+        <h1>Cash Out</h1>
+        <form action="">
+            <legend>Agent Number</legend>
+            <input type="number" placeholder="Enter 11 digit number">
+            <legend>Amount To Cash Out </legend>
+            <input id="cash-out-ammount" type="number" placeholder="Enter amount to cash out">
+            <legend>Pin Number</legend>
+            <input id="pinnumber" type="number" placeholder="Enter 4 digit pin number">
+            <button id="cash-out-btn">Withdraw Money</button>
+        </form>
 
-
+    </section>
+    <section class="transaction-history-section">
+        <h1 class="text-[18px] font-semibold">Tranction History</h1>
+        <div class="histories">
+            
+        </div>
+    </section>
 
 
 
